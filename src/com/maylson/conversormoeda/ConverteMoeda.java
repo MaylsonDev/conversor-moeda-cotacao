@@ -29,9 +29,9 @@ public class ConverteMoeda {
                     double pesoArgentino = cotacaoMoeda.conversionRates().get("ARS");
                     double valorConvertido = dolar * pesoArgentino;
 
-                    RegistrarConversao log = new RegistrarConversao("USD","ARS",dolar,valorConvertido);
+                    RegistraConversao log = new RegistraConversao("USD","ARS",dolar,valorConvertido);
                     System.out.println("O valor convertido é: " + valorAredondado.format(valorConvertido));
-                    log.registralLogConversao();
+                    log.registraLogConversao();
                 }
                 if (respostaUsuario.equalsIgnoreCase("2")){
                     System.out.println("Digite o valor em Peso Argentino que deseja converter em Dolares:");
@@ -41,9 +41,9 @@ public class ConverteMoeda {
                     double pesoArgentino = cotacaoMoeda.conversionRates().get("ARS");
                     double valorConvertido = pesoArgentinoInformado / pesoArgentino;
 
-                    RegistrarConversao log = new RegistrarConversao("USD","ARS",pesoArgentinoInformado,valorConvertido);
+                    RegistraConversao log = new RegistraConversao("USD","ARS",pesoArgentinoInformado,valorConvertido);
                     System.out.println("O valor convertido é: " + valorAredondado.format(valorConvertido));
-                    log.registralLogConversao();
+                    log.registraLogConversao();
                 }
                 if (respostaUsuario.equalsIgnoreCase("3")){
                     System.out.println("Digite o valor em Dolar que deseja converter em Reais:");
@@ -53,9 +53,9 @@ public class ConverteMoeda {
                     double real = cotacaoMoeda.conversionRates().get("BRL");
                     double valorConvertido = valorDolar * real;
 
-                    RegistrarConversao log = new RegistrarConversao("USD","BRL",valorDolar,valorConvertido);
+                    RegistraConversao log = new RegistraConversao("USD","BRL",valorDolar,valorConvertido);
                     System.out.println("O valor convertido é: " + valorAredondado.format(valorConvertido));
-                    log.registralLogConversao();
+                    log.registraLogConversao();
                 }
                 if (respostaUsuario.equalsIgnoreCase("4")){
                     System.out.println("Digite o valor em Real que deseja converter em Dolar:");
@@ -65,9 +65,9 @@ public class ConverteMoeda {
                     double real = cotacaoMoeda.conversionRates().get("BRL");
                     double valorConvertido = valorReal / real;
 
-                    RegistrarConversao log = new RegistrarConversao("USD","BRL",valorReal,valorConvertido);
+                    RegistraConversao log = new RegistraConversao("USD","BRL",valorReal,valorConvertido);
                     System.out.println("O valor convertido é: " + valorAredondado.format(valorConvertido));
-                    log.registralLogConversao();
+                    log.registraLogConversao();
                 }
                 if (respostaUsuario.equalsIgnoreCase("5")){
                     System.out.println("Digite o valor em Dolar que deseja converter em Peso Colombiano:");
@@ -77,9 +77,9 @@ public class ConverteMoeda {
                     double pesoColombiano = cotacaoMoeda.conversionRates().get("COP");
                     double valorConvertido = valorDolar * pesoColombiano;
 
-                    RegistrarConversao log = new RegistrarConversao("USD","COP",valorDolar,valorConvertido);
+                    RegistraConversao log = new RegistraConversao("USD","COP",valorDolar,valorConvertido);
                     System.out.println("O valor convertido é: " + valorAredondado.format(valorConvertido));
-                    log.registralLogConversao();
+                    log.registraLogConversao();
                 }
                 if (respostaUsuario.equalsIgnoreCase("6")){
                     System.out.println("Digite o valor em PesoColombiano que deseja converter em Dolar:");
@@ -89,9 +89,9 @@ public class ConverteMoeda {
                     double pesoColombiano = cotacaoMoeda.conversionRates().get("COP");
                     double valorConvertido = valorPesoColombiano / pesoColombiano;
 
-                    RegistrarConversao log = new RegistrarConversao("USD","COP",valorPesoColombiano,valorConvertido);
+                    RegistraConversao log = new RegistraConversao("USD","COP",valorPesoColombiano,valorConvertido);
                     System.out.println("O valor convertido é: " + valorAredondado.format(valorConvertido));
-                    log.registralLogConversao();
+                    log.registraLogConversao();
                 }
             }
         }catch (ErrorCotacaoMoeda e) {

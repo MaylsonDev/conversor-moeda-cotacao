@@ -3,13 +3,13 @@ package com.maylson.conversormoeda;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class RegistrarConversao {
+public class RegistraConversao {
     private String moedaOrigem;
     private String moedaDestino;
     private double valorOriginal;
     private double valorConvertido;
 
-    public RegistrarConversao(String moedaOrigem, String moedaDestino, double valorOriginal, double valorConvertido) {
+    public RegistraConversao(String moedaOrigem, String moedaDestino, double valorOriginal, double valorConvertido) {
         this.moedaOrigem = moedaOrigem;
         this.moedaDestino = moedaDestino;
         this.valorOriginal = valorOriginal;
@@ -17,7 +17,7 @@ public class RegistrarConversao {
     }
 
 
-    public void registralLogConversao(){
+    public void registraLogConversao(){
         LocalDateTime horaAtual = LocalDateTime.now();
         DateTimeFormatter horaData = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
         String dataHoraFormatada = horaAtual.format(horaData);
